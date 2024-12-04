@@ -14,9 +14,9 @@ function Grid({ numRows, numCols }) {
   };
 
   const todo = range(numRows).map((row, rowIndex) => (
-    <div key={rowIndex} style={rowStyles}>
+    <div key={rowIndex} style={rowStyles} className='row'>
       {range(numCols).map((col, colIndex) => (
-        <div key={colIndex} style={gridStyles}></div>
+        <div key={colIndex} style={gridStyles} className='cell'></div>
       ))}
     </div>
   ));
